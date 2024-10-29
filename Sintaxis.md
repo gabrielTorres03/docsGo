@@ -31,7 +31,7 @@ Quedan algunos detalles de formato. Muy brevemente:
 ### Sangría
 Usamos tabulaciones para sangrar y gofmtlas emitimos de forma predeterminada. Use espacios solo si es necesario.
 
-###Longitud de línea
+### Longitud de línea
 
 Go no tiene límite de longitud de línea. No te preocupes por desbordar una tarjeta perforada. Si una línea parece demasiado larga, envuélvela y sangra con una tabulación adicional.
 #### Paréntesis
@@ -80,7 +80,7 @@ Al igual que C, la gramática formal de Go utiliza punto y coma para finalizar l
 
 Las estructuras de control de Go están relacionadas con las de C, pero difieren en aspectos importantes. ####NO HAY BUCLES 'do' O BUCLES 'while'
 
-###If 
+### If 
 
 En Go, el condicional If se ve asi: 
 
