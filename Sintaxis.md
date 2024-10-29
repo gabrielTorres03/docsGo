@@ -51,7 +51,7 @@ Go ofrece comentarios de bloque al estilo C /* */y comentarios de línea al esti
 
 Los nombres son tan importantes en Go como en cualquier otro lenguaje. Incluso tienen un efecto semántico: la visibilidad de un nombre fuera de un paquete está determinada por si su primer carácter está en mayúscula. Por lo tanto, vale la pena dedicar un poco de tiempo a hablar sobre las convenciones de nombres en los programas Go.
 
-# #Nombres de paquetes
+## Nombres de paquetes
 
 Cuando se importa un paquete, el nombre del paquete se convierte en un descriptor de acceso para el contenido.
 
