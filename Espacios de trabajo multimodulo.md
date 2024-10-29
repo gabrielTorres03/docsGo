@@ -106,9 +106,9 @@ A continuación, agregaremos una copia local del golang.org/x/example/hellomódu
 ## Descargar y modificar el golang.org/x/example/hellomódulo
 En este paso, descargaremos una copia del repositorio Git que contiene el golang.org/x/example/hellomódulo, lo agregaremos al espacio de trabajo y luego le agregaremos una nueva función que usaremos desde el programa hello.
 
-	1. Clonar el repositorio
+1. Clonar el repositorio
 
-	Desde el directorio del espacio de trabajo, ejecute el gitcomando para clonar el repositorio:
+Desde el directorio del espacio de trabajo, ejecute el gitcomando para clonar el repositorio:
 	```go
 	$ git clone https://go.googlesource.com/example
 	Cloning into 'example'...
@@ -117,9 +117,9 @@ En este paso, descargaremos una copia del repositorio Git que contiene el golang
 	Resolving deltas: 100% (27/27), done.
 	```
 
-	2. Agregar el módulo al espacio de trabajo
+2. Agregar el módulo al espacio de trabajo
 	
-	El repositorio de Git se acaba de descargar en ./example. El código fuente del golang.org/x/example/hellomódulo está en ./example/hello. Añádelo al espacio de trabajo:
+El repositorio de Git se acaba de descargar en ./example. El código fuente del golang.org/x/example/hellomódulo está en ./example/hello. Añádelo al espacio de trabajo:
 ```go
 $ go work use ./example/hello
 ```
@@ -138,7 +138,7 @@ El espacio de trabajo ahora incluye tanto el example.com/hellomódulo como el go
 
 Esto nos permitirá usar el nuevo código que escribiremos en nuestra copia del paquete reverse en lugar de la versión del paquete en el caché del módulo que descargamos con el comando get.
 
-	3. Añade la nueva función.
+3. Añade la nueva función.
 
 	Agregaremos una nueva función para revertir un número al golang.org/x/example/hello/reversepaquete.
 
@@ -155,7 +155,7 @@ func Int(i int) int {
 }
 ```
 
-	4. Modifique el programa hola para utilizar la función.
+4. Modifique el programa hola para utilizar la función.
 
 	Modificar el contenido de workspace/hello/hello.gopara incluir lo siguiente:
 ```go
