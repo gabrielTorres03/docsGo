@@ -6,9 +6,9 @@ Una de las características inusuales de Go es que las funciones y los métodos 
 
 En C, un error de escritura se indica mediante un recuento negativo y el código de error se oculta en una ubicación volátil. En Go, Write puede devolver un recuento y un error: “Sí, escribiste algunos bytes, pero no todos, porque llenaste el dispositivo”. La firma del metodo Write en los archivos del paquete os es:
 
-```go
+```
 func (file *File) Write(b []byte) (n int, err error)
-``
+```
 
 Como dice la documentación, devuelve la cantidad de bytes escritos y un valor distinto de nulo error cuando n != len(b). Este es un estilo común; consulte la sección sobre manejo de errores para obtener más ejemplos.
 
