@@ -1,4 +1,4 @@
-#Espacios de trabajo multimodulo
+# Espacios de trabajo multimodulo
 
 En este apartado presentamos los conceptos básicos de los espacios de trabajo de varios módulos en Go. Con los espacios de trabajo de varios módulos, puedes indicarle al comando Go que estás escribiendo código en varios módulos al mismo tiempo y compilar y ejecutar código fácilmente en esos módulos.
 
@@ -63,11 +63,11 @@ $ go run .
 olleH
 ```
 
-##Crear el espacio de trabajo
+## Crear el espacio de trabajo
 
 En este paso, crearemos un go.workarchivo para especificar un espacio de trabajo con el módulo.
 
-###Inicializar el espacio de trabajo
+### Inicializar el espacio de trabajo
 
 En el workspacedirectorio, ejecute:
 ```go
@@ -91,7 +91,7 @@ La directiva use le dice a Go que el módulo en el hello directorio debe ser el 
 
 Entonces en cualquier subdirectorio del modulo workspace estará activo.
 
-###Ejecute el programa en el directorio del espacio de trabajo
+### Ejecute el programa en el directorio del espacio de trabajo
  
 En el workspacedirectorio, ejecute:
 ```go
@@ -103,7 +103,7 @@ El comando Go incluye todos los módulos del espacio de trabajo como módulos pr
 
 A continuación, agregaremos una copia local del golang.org/x/example/hellomódulo al espacio de trabajo. Ese módulo se almacena en un subdirectorio del go.googlesource.com/examplerepositorio de Git. Luego, agregaremos una nueva función al paquete reverse que podamos usar en lugar de String.
 
-##Descargar y modificar el golang.org/x/example/hellomódulo
+## Descargar y modificar el golang.org/x/example/hellomódulo
 En este paso, descargaremos una copia del repositorio Git que contiene el golang.org/x/example/hellomódulo, lo agregaremos al espacio de trabajo y luego le agregaremos una nueva función que usaremos desde el programa hello.
 
 	1. Clonar el repositorio
@@ -172,7 +172,7 @@ func main() {
 }
 ```
 
-###Ejecutar el código en el espacio de trabajo
+### Ejecutar el código en el espacio de trabajo
 
 Desde el directorio del espacio de trabajo, ejecute
 ```go
@@ -186,7 +186,7 @@ go.work Se puede utilizar en lugar de agregar replace directivas para trabajar e
 
 Dado que los dos módulos están en el mismo espacio de trabajo, es fácil realizar un cambio en un módulo y usarlo en otro.
 
-###Paso futuro
+### Paso futuro
 
 Ahora bien, para publicar correctamente estos módulos, tendríamos que hacer una publicación del golang.org/x/example/hello módulo, por ejemplo en v0.1.0. Esto se hace normalmente etiquetando una confirmación en el repositorio de control de versiones del módulo. Consulta la documentación del flujo de trabajo de publicación del módulo para obtener más detalles. Una vez que se realiza la publicación, podemos aumentar el requisito del golang.org/x/example/hellomódulo en hello/go.mod:
 ```go
