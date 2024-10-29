@@ -6,7 +6,7 @@ Bienvenido a la documentación del proyecto. A continuación se encuentran enlac
 
 - [Introducción](Introduccion.md)
 - [Sintaxis](Sintaxis.md)
-- [Funciones y Datos](Funciones y Datos.md)
+- [Funciones y Datos](Funciones%20y%20Datos.md)
 - [API](api.md)
 - [Contribuir](contribuir.md)
 
