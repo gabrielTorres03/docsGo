@@ -1,8 +1,8 @@
-#Creacion de modulo Go
+# Creacion de modulo Go
 
 Esta es la primera parte de un tutorial que presenta algunas características fundamentales del lenguaje Go. A continuacion se procedera a la creacion de dos modulos que serviran como ejemplo para la demostracion.  El primero es una biblioteca que se pretende que sea importada por otras bibliotecas o aplicaciones. El segundo es una aplicación de llamada que utilizará el primero.
 
-##Iniciar un módulo que otros puedan utilizar
+## Iniciar un módulo que otros puedan utilizar
 
 Comience por crear un módulo Go. En un módulo, se recopilan uno o más paquetes relacionados para un conjunto discreto y útil de funciones. Por ejemplo, puede crear un módulo con paquetes que tengan funciones para realizar análisis financieros, de modo que otros usuarios que escriban aplicaciones financieras puedan utilizar su trabajo. Para obtener más información sobre el desarrollo de módulos, consulte Desarrollo y publicación de módulos .
 
