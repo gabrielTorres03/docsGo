@@ -76,7 +76,7 @@ si propietario != usuario {
 
 Al igual que C, la gramática formal de Go utiliza punto y coma para finalizar las instrucciones, pero a diferencia de C, esos puntos y coma no aparecen en el código fuente. En su lugar, el analizador léxico utiliza una regla simple para insertar puntos y coma automáticamente a medida que escanea, por lo que el texto de entrada está prácticamente libre de ellos.
 
-##Estructuras de control
+## Estructuras de control
 
 Las estructuras de control de Go están relacionadas con las de C, pero difieren en aspectos importantes. ####NO HAY BUCLES 'do' O BUCLES 'while'
 
