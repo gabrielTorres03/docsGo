@@ -11,7 +11,7 @@ Bienvenido a la documentación del proyecto. A continuación se encuentran enlac
 - [Espacios de trabajo multimodulo](Espacios%20de%20trabajo%20multimodulo.md)
 
 ## Ejemplos practicos
--[Ejercicio 1](Ejercicio1.md)
--[Ejercicio 2](Ejercicio2.md)
+- [Ejercicio 1](Ejercicio1.md)
+- [Ejercicio 2](Ejercicio2.md)
 
 Haz clic en cualquiera de los enlaces anteriores para ver la sección específica en detalle.
