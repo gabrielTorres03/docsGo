@@ -5,7 +5,7 @@ Bienvenido a la documentación del proyecto. A continuación se encuentran enlac
 ## Integrantes
 
 1. David Gonzalez 31.022.273
-2. Luis Chirivella
+2. Luis Chirivella 30.604.386
 3. Alvaro Lugo 31.100.234
 4. Gabriel Torres 28.113.535
 
