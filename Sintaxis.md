@@ -78,7 +78,7 @@ Al igual que C, la gramática formal de Go utiliza punto y coma para finalizar l
 
 ## Estructuras de control
 
-Las estructuras de control de Go están relacionadas con las de C, pero difieren en aspectos importantes. ####NO HAY BUCLES 'do' O BUCLES 'while'
+Las estructuras de control de Go están relacionadas con las de C, pero difieren en aspectos importantes. #### NO HAY BUCLES 'do' O BUCLES 'while'
 
 ### If 
 
