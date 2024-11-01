@@ -12,7 +12,7 @@ Un repositorio contiene uno o más módulos. Un módulo es una colección de paq
 
 Tenga en cuenta que no es necesario publicar el código en un repositorio remoto antes de compilarlo. Se puede definir un módulo localmente sin pertenecer a un repositorio. Sin embargo, es una buena costumbre organizar el código como si fuera a publicarlo algún día.
 
-La ruta de cada módulo no solo sirve como prefijo de ruta de importación para sus paquetes, sino que también indica dónde go debe buscar el comando para descargarlo. Por ejemplo, para descargar el módulo golang.org/x/tools, el comando go consultaría el repositorio indicado por https://golang.org/x/tools(descrito con más detalle aquí ).
+La ruta de cada módulo no solo sirve como prefijo de ruta de importación para sus paquetes, sino que también indica dónde go debe buscar el comando para descargarlo. Por ejemplo, para descargar el módulo golang.org/x/tools, el comando go consultaría el repositorio indicado por https://golang.org/x/tools (descrito con más detalle aquí).
 
 Una ruta de importación es una cadena que se utiliza para importar un paquete. La ruta de importación de un paquete es la ruta de su módulo unida a su subdirectorio dentro del módulo. Por ejemplo, el módulo github.com/google/go-cmpcontiene un paquete en el directorio cmp/. La ruta de importación de ese paquete es github.com/google/go-cmp/cmp. Los paquetes de la biblioteca estándar no tienen un prefijo de ruta de módulo.
 
