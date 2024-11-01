@@ -2,6 +2,13 @@
 
 Bienvenido a la documentación del proyecto. A continuación se encuentran enlaces a cada sección detallada en archivos `.md`.
 
+## Integrantes
+
+1. David Gonzalez 31.022.273
+2. Luis Chirivella
+3. Alvaro Lugo 31.100.234
+4. Gabriel Torres 28.113.535
+
 ## Contenido
 
 - [Introducción](Introduccion.md)
