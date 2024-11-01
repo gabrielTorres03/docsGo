@@ -12,6 +12,7 @@ Bienvenido a la documentación del proyecto. A continuación se encuentran enlac
 ## Contenido
 
 - [Introducción](Introduccion.md)
+- [Como escribir codigo en Go](codigoGo.md)
 - [Sintaxis](Sintaxis.md)
 - [Funciones y Datos](Funciones%20y%20Datos.md)
 - [Creacion de modulo](Creacion%20de%20modulo.md)
