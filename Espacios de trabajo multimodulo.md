@@ -1,4 +1,4 @@
-#Espacios de trabajo multimodulo
+# Espacios de trabajo multimodulo
 
 En este apartado presentamos los conceptos básicos de los espacios de trabajo de varios módulos en Go. Con los espacios de trabajo de varios módulos, puedes indicarle al comando Go que estás escribiendo código en varios módulos al mismo tiempo y compilar y ejecutar código fácilmente en esos módulos.
 
@@ -63,11 +63,11 @@ $ go run .
 olleH
 ```
 
-##Crear el espacio de trabajo
+## Crear el espacio de trabajo
 
 En este paso, crearemos un go.workarchivo para especificar un espacio de trabajo con el módulo.
 
-###Inicializar el espacio de trabajo
+### Inicializar el espacio de trabajo
 
 En el workspacedirectorio, ejecute:
 ```go
@@ -91,7 +91,7 @@ La directiva use le dice a Go que el módulo en el hello directorio debe ser el 
 
 Entonces en cualquier subdirectorio del modulo workspace estará activo.
 
-###Ejecute el programa en el directorio del espacio de trabajo
+### Ejecute el programa en el directorio del espacio de trabajo
  
 En el workspacedirectorio, ejecute:
 ```go
@@ -103,12 +103,12 @@ El comando Go incluye todos los módulos del espacio de trabajo como módulos pr
 
 A continuación, agregaremos una copia local del golang.org/x/example/hellomódulo al espacio de trabajo. Ese módulo se almacena en un subdirectorio del go.googlesource.com/examplerepositorio de Git. Luego, agregaremos una nueva función al paquete reverse que podamos usar en lugar de String.
 
-##Descargar y modificar el golang.org/x/example/hellomódulo
+## Descargar y modificar el golang.org/x/example/hellomódulo
 En este paso, descargaremos una copia del repositorio Git que contiene el golang.org/x/example/hellomódulo, lo agregaremos al espacio de trabajo y luego le agregaremos una nueva función que usaremos desde el programa hello.
 
-	1. Clonar el repositorio
+1. Clonar el repositorio
 
-	Desde el directorio del espacio de trabajo, ejecute el gitcomando para clonar el repositorio:
+Desde el directorio del espacio de trabajo, ejecute el gitcomando para clonar el repositorio:
 	```go
 	$ git clone https://go.googlesource.com/example
 	Cloning into 'example'...
@@ -117,9 +117,9 @@ En este paso, descargaremos una copia del repositorio Git que contiene el golang
 	Resolving deltas: 100% (27/27), done.
 	```
 
-	2. Agregar el módulo al espacio de trabajo
+2. Agregar el módulo al espacio de trabajo
 	
-	El repositorio de Git se acaba de descargar en ./example. El código fuente del golang.org/x/example/hellomódulo está en ./example/hello. Añádelo al espacio de trabajo:
+El repositorio de Git se acaba de descargar en ./example. El código fuente del golang.org/x/example/hellomódulo está en ./example/hello. Añádelo al espacio de trabajo:
 ```go
 $ go work use ./example/hello
 ```
@@ -138,7 +138,7 @@ El espacio de trabajo ahora incluye tanto el example.com/hellomódulo como el go
 
 Esto nos permitirá usar el nuevo código que escribiremos en nuestra copia del paquete reverse en lugar de la versión del paquete en el caché del módulo que descargamos con el comando get.
 
-	3. Añade la nueva función.
+3. Añade la nueva función.
 
 	Agregaremos una nueva función para revertir un número al golang.org/x/example/hello/reversepaquete.
 
@@ -155,7 +155,7 @@ func Int(i int) int {
 }
 ```
 
-	4. Modifique el programa hola para utilizar la función.
+4. Modifique el programa hola para utilizar la función.
 
 	Modificar el contenido de workspace/hello/hello.gopara incluir lo siguiente:
 ```go
@@ -172,7 +172,7 @@ func main() {
 }
 ```
 
-###Ejecutar el código en el espacio de trabajo
+### Ejecutar el código en el espacio de trabajo
 
 Desde el directorio del espacio de trabajo, ejecute
 ```go
@@ -186,7 +186,7 @@ go.work Se puede utilizar en lugar de agregar replace directivas para trabajar e
 
 Dado que los dos módulos están en el mismo espacio de trabajo, es fácil realizar un cambio en un módulo y usarlo en otro.
 
-###Paso futuro
+### Paso futuro
 
 Ahora bien, para publicar correctamente estos módulos, tendríamos que hacer una publicación del golang.org/x/example/hello módulo, por ejemplo en v0.1.0. Esto se hace normalmente etiquetando una confirmación en el repositorio de control de versiones del módulo. Consulta la documentación del flujo de trabajo de publicación del módulo para obtener más detalles. Una vez que se realiza la publicación, podemos aumentar el requisito del golang.org/x/example/hellomódulo en hello/go.mod:
 ```go

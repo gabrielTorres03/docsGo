@@ -1,14 +1,14 @@
-#Funciones y Datos
+# Funciones y Datos
 
-##Múltiples valores de retorno 
+## Múltiples valores de retorno 
 
 Una de las características inusuales de Go es que las funciones y los métodos pueden devolver múltiples valores. Esta forma se puede utilizar para mejorar un par de expresiones idiomáticas torpes en los programas de C: devoluciones de errores en banda como -1for EOF y modificando un argumento pasado por address.
 
 En C, un error de escritura se indica mediante un recuento negativo y el código de error se oculta en una ubicación volátil. En Go, Write puede devolver un recuento y un error: “Sí, escribiste algunos bytes, pero no todos, porque llenaste el dispositivo”. La firma del metodo Write en los archivos del paquete os es:
 
-```go
+```
 func (file *File) Write(b []byte) (n int, err error)
-``
+```
 
 Como dice la documentación, devuelve la cantidad de bytes escritos y un valor distinto de nulo error cuando n != len(b). Este es un estilo común; consulte la sección sobre manejo de errores para obtener más ejemplos.
 
@@ -26,9 +26,9 @@ func nextInt(b []byte, i int) (int, int) {
 }
 ```
 
-##Datos
+## Datos
 
-###Asignacion con new
+### Asignacion con new
 
 Go tiene dos primitivas de asignación, las funciones integradas newy make. Hacen cosas diferentes y se aplican a diferentes tipos, lo que puede resultar confuso, pero las reglas son simples. Hablemos newprimero de . Es una función integrada que asigna memoria, pero a diferencia de sus homónimas en otros lenguajes, no inicializa la memoria, solo la pone a cero . Es decir, new(T)asigna almacenamiento puesto a cero para un nuevo elemento de tipo Ty devuelve su dirección, un valor de tipo *T. En la terminología de Go, devuelve un puntero a un valor cero recién asignado de tipo T.
 
@@ -43,7 +43,7 @@ tipo SyncedBuffer struct {
 }
 ```
 
-###Constructores
+### Constructores
 
 A veces, el valor cero no es suficiente y es necesario un constructor inicializador, como en este ejemplo derivado del paquete os.
 
