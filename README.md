@@ -18,6 +18,7 @@ Bienvenido a la documentación del proyecto. A continuación se encuentran enlac
 - [Creacion de modulo](Creacion%20de%20modulo.md)
 - [Espacios de trabajo multimodulo](Espacios%20de%20trabajo%20multimodulo.md)
 - [Recolector de Basura en Go](recolectorBasura.md)
+- [Gestion de dependencias en Go](dependencias.md)
 
 ## Ejemplos practicos
 - [Ejercicio 1](Ejercicio1.md)
